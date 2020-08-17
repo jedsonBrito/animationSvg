@@ -9,10 +9,10 @@ class Cards{
     console.log(posicao)
     if(posicao <= 280){
       document.querySelector('.card-esquerdo').style.backgroundColor = "blue";
-      document.querySelector('.card-direto').style.backgroundColor = "red";
+      document.querySelector('.card-direito').style.backgroundColor = "red";
     } else {
       document.querySelector('.card-esquerdo').style.backgroundColor = "white";
-      document.querySelector('.card-direto').style.backgroundColor = "white";
+      document.querySelector('.card-direito').style.backgroundColor = "white";
     }
   }
 
