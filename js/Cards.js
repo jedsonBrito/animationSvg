@@ -8,11 +8,11 @@ class Cards{
     const posicao = document.getElementById('section-dicas').getBoundingClientRect()['y']
     console.log(posicao)
     if(posicao <= 280){
-      document.querySelect('.card-esquerdo').backgroundColor = "blue";
-      document.querySelect('.card-direto').backgroundColor = "red";
+      document.querySelector('.card-esquerdo').backgroundColor = "blue";
+      document.querySelector('.card-direto').backgroundColor = "red";
     } else {
-      document.querySelect('.card-esquerdo').backgroundColor = "white";
-      document.querySelect('.card-direto').backgroundColor = "white";
+      document.querySelector('.card-esquerdo').backgroundColor = "white";
+      document.querySelector('.card-direto').backgroundColor = "white";
     }
   }
 
