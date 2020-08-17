@@ -3,5 +3,5 @@ import { Cards } from './Cards.js'
 
 window.onload = () => {
   let animaCard = new Cards()
-  console.log('teste')
+  document.addEventListener('scroll',animaCard.test)
 }
