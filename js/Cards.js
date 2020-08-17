@@ -4,8 +4,10 @@ class Cards{
 
   }
 
-  teste() {
-    console.log('scroll')
+  calculoScroll(){
+    const posicao = document.getElementById('section-dicas').getBoundingClientRect()['y']
+
+    console.log(posicao)
   }
 
 }

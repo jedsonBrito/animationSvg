@@ -2,6 +2,6 @@ import { Cards } from './Cards.js'
 
 
 window.onload = () => {
-  let animaCard = new Cards()
-  document.addEventListener('onscroll',animaCard.test)
+  const animaCards = new Cards();
+  document.addEventListener('scroll', animaCards.calculoScroll)
 }
