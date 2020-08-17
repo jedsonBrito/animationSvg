@@ -8,12 +8,9 @@ class Cards{
     const posicao = document.getElementById('section-dicas').getBoundingClientRect()['y']
     console.log(posicao)
     if(posicao <= 300){
-      document.querySelector('.card-esquerdo').style.backgroundColor = "blue";
-      document.querySelector('.card-direito').style.backgroundColor = "red";
-    } else {
-      document.querySelector('.card-esquerdo').style.backgroundColor = "white";
-      document.querySelector('.card-direito').style.backgroundColor = "white";
-    }
+      document.querySelector('.card-esquerdo').style.transform = `translate(${posicao}%)`;
+      document.querySelector('.card-direito').style.transform = `translate(${posicao}%)`;
+    } 
   }
 
 }
