@@ -1,15 +1,21 @@
 class Cards{
 
   constructor() {
+      this.sectionDicas = document.getElementById('section-dicas')
+      this.cardEsq = document.querySelector('.card-esquerdo')
+      this.cardDir = document.querySelector('.card-direito')
+  }
 
+  scrollCards(){
+    window.requestAnimationFrame(this.calculoScroll.bind(this));
   }
 
   calculoScroll(){
-    const posicao = document.getElementById('section-dicas').getBoundingClientRect()['y']
+    const posicao = this.sectionDicas.getBoundingClientRect()['y']
     console.log(posicao)
     if(posicao <= 300){
-      document.querySelector('.card-esquerdo').style.transform = `translate(${posicao}%)`;
-      document.querySelector('.card-direito').style.transform = `translate(${posicao}%)`;
+      this.cardEsq.style.transform = `translate(${posicao}%)`;
+      this.cardDir.style.transform = `translate(${-posicao}%)`;
     } 
   }
 
