@@ -1,5 +1,4 @@
 class Cards{
-
   constructor() {
       this.sectionDicas = document.getElementById('section-dicas')
       this.cardEsq = document.querySelector('.card-esquerdo')
@@ -13,9 +12,9 @@ class Cards{
   calculoScroll(){
     const posicao = this.sectionDicas.getBoundingClientRect()['y']
     console.log(posicao)
-    if(posicao <= 300){
-      this.cardEsq.style.transform = `translate(${posicao}%)`;
-      this.cardDir.style.transform = `translate(${-posicao}%)`;
+    if(posicao >= 25){
+      this.cardEsq.style.transform = `translate(${(-posicao+25)/10}%)`;
+      this.cardDir.style.transform = `translate(${(posicao+25)/10}%)`;
     } 
   }
 
