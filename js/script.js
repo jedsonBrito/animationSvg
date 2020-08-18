@@ -1,4 +1,5 @@
 import { Cards } from './Cards.js'
+import { Icones } from './Icones.js'
 
 
 window.onload = () => {
