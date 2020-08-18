@@ -67,15 +67,20 @@ p{
   opacity: 0.7;
   position: absolute;
   left: 20%;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .container-footer{
   position: relative;
+  width: 100vw;
 }
 
-.margin{
-  margin-bottom: 0;
+.img-footer{
+  width: 100%;
+}
+
+.footer-infos{
+  text-align: center;
 }
 
 @keyframes lett-preenchimento{
