@@ -15,7 +15,7 @@ body{
   width: 80%;
   margin-top: 10%;
   fill: transparent;
-  animation:  lett-preenchimento 0.5s ease-in-out forwards 1s;
+  animation:  lett-preenchimento 0.5s ease-in-out forwards 4s;
 }
 
 .lett-header path{
@@ -23,7 +23,7 @@ body{
   stroke-width: 2px;
   stroke-dasharray: 3000;
   stroke-dashoffset: 3000;
-  animation:  lett-traçado 5s ease-in-out forwards 0.5s;
+  animation:  lett-traçado 5s ease-in-out forwards 2s;
 }
 
 h1,h2{
@@ -58,6 +58,12 @@ p{
   width: 40%;
   padding: 2%;
   margin:  2.5%;
+}
+
+.lett-footer{
+  width: 60%;
+  margin:  auto;
+  display:  block;
 }
 
 @keyframes lett-preenchimento{
